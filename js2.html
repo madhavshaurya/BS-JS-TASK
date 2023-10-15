@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alphabetical Order</title>
+</head>
+<body>
+    <h1>Alphabetical Order</h1>
+    <label for="stringInput">Enter a string: </label>
+    <input type="text" id="stringInput" placeholder="Enter a string">
+    <button onclick="sortString()">Sort Letters</button>
+    <p id="result"></p>
+
+    <script>
+        function sortString() {
+            // Get the user's input
+            const stringInput = document.getElementById("stringInput").value;
+
+            // Check if the input is a valid string
+            if (typeof stringInput === 'string') {
+                const sortedString = stringInput.split('').sort().join('');
+                document.getElementById("result").innerHTML = `Sorted String: ${sortedString}`;
+            } else {
+                document.getElementById("result").innerHTML = "Invalid input. Please enter a valid string.";
+            }
+        }
+    </script>
+</body>
+</html>

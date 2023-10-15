@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <script type="text/javascript">
+      var img = null;
+      var intervalId = null;
+
+      function init() {
+         img = document.getElementById('myimg');
+         img.style.position = 'relative';
+         img.style.left = '50px';
+      }
+
+      function moveRight() {
+         img.style.left = parseInt(img.style.left) + 5 + 'px';
+      }
+
+      function startMoving() {
+         if (intervalId === null) {
+            intervalId = setInterval(moveRight, 50);
+         }
+      }
+
+      function stopMoving() {
+         if (intervalId !== null) {
+            clearInterval(intervalId);
+            intervalId = null;
+         }
+      }
+
+      window.onload = init;
+
+   </script>
+</head>
+
+<body>
+   <form>
+      <img id="myimg" src="train1.png" />
+      <center>
+         <p style="color: blue; font-size: large;" ><b>Click the buttons to move the image or stop it</b></p>
+         <input type="button" value="Start" onclick="startMoving();" />
+         <input type="button" value="Stop" onclick="stopMoving();" />
+      </center>
+   </form>
+</body>
+
+</html>

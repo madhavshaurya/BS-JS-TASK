@@ -1,0 +1,60 @@
+
+
+.uc-mobile-menu-container > div {
+visibility : hidden;
+}
+
+#menu {
+margin : 50px 40px;
+
+}
+
+#menu > li {
+text-transform : uppercase;
+}
+
+#menu > li:last-child {
+border-bottom : 0;
+}
+
+#menu > li ul li {
+margin-left : 0;
+color       : #999999;
+
+}
+
+#menu li a {
+display         : block;
+text-decoration : none;
+color           : #777777;
+padding         : 10px 0;
+font-size: 16px;
+border-bottom: 1px dotted #444;
+}
+
+
+#menu li a:hover,
+#menu li.active a {
+color : #ffffff;
+}
+
+/*Mobile Menu Close*/
+.uc-mobile-menu .close {
+position           : absolute;
+right              : 0;
+top                : 0;
+color              : #ffffff;
+text-shadow        : none;
+filter             : alpha(opacity=50);
+opacity            : .5;
+width              : 44px;
+height             : 44px;
+-webkit-transition : all 0.3s ease 0s;
+-moz-transition    : all 0.3s ease 0s;
+-o-transition      : all 0.3s ease 0s;
+transition         : all 0.3s ease 0s;
+}
+
+.uc-mobile-menu .close:hover {
+opacity : 1;
+}
