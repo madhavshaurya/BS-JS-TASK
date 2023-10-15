@@ -1,4 +1,4 @@
-# Bootstrap Task - Sample Project
+# Bootstrap & JavaScript Task - Sample Project
 
 This is a simple project for Bootstrap Task. It includes a set of HTML files that demonstrate the use of Bootstrap for creating responsive and visually appealing web pages.
 
